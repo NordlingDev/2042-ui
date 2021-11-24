@@ -1,5 +1,15 @@
-import { ModeContext } from "./mode.context";
+import React from "react";
 
-export const Mode = ({ children, value }) => {
-  return <ModeContext.Provider value={value}>{children}</ModeContext.Provider>;
+import { ModeContext } from "./mode.context";
+import { ModeProps } from "./mode.types";
+
+export const Mode = ({
+    children,
+    value,
+}: ModeProps) => {
+    return (
+        <ModeContext.Provider value={value}>
+            {children}
+        </ModeContext.Provider>
+    );
 };
