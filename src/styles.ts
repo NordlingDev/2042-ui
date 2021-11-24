@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle(
   ({ theme }) => css`
     body {
       line-height: 1.4;
-      background: url("./assets/bf2042_wallpaper.png") ${theme.palette.black};
+      background: url("./static/bf2042_wallpaper.png") ${theme.palette.black};
       background-size: cover;
       color: ${theme.palette.white};
       font-family: "Rajdhani", sans-serif;
